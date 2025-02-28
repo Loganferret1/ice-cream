@@ -3,220 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homemade Ice Cream Mastery | Pro Machines & Recipes</title>
+    <title>Ice Cream Essentials | Recipes & Equipment</title>
     <style>
         :root {
-            --primary: #FF6B6B;
-            --secondary: #6BFFB0;
-            --accent: #FFD36B;
+            --primary: #FFB7C5;
+            --secondary: #A8E6CF;
+            --text: #333;
         }
 
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background: #FFF5F5;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url ( images/machines.jpeg) center/cover;
-            color: white;
-        }
-
-        .main-cta {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 1rem 0;
-            transition: transform 0.3s;
-        }
-
-        .main-cta:hover {
-            transform: scale(1.05);
-        }
-
-        .sales-pitch {
-            max-width: 600px;
-            margin: 0 auto 2rem auto;
-            font-size: 1.1rem;
             line-height: 1.6;
-        }
-    </style>
-</head>
-<body>
-    <section class="hero">
-        <!-- Added Title & Sales Pitch -->
-        <h1>Create Creamy, Dreamy Homemade Ice Cream</h1>
-        <div class="sales-pitch">
-            <p>Whip up professional-quality frozen treats in your kitchen with our top-rated machines and expert-tested recipes. Perfect for beginners and ice cream enthusiasts alike!</p>
-        </div>
-
-        <a href="https://amzn.to/3XmENng" class="main-cta" target="_blank">
-            🍦 Shop Top-Rated Machines →
-        </a>
-    </section>
-
-    <!-- Rest of your existing content below -->
-    <!-- [Previous sections remain unchanged] -->
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice Cream Tools & Guides | Pro-Grade Equipment & Recipes</title>
-    <style>
-        :root {
-            --primary: #FF6B6B;
-            --secondary: #6BFFB0;
-            --accent: #FFD36B;
+            background: #f9f9f9;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background: #FFF5F5;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                       url ('images/recipes.jpeg') center/cover;
-            color: white;
+        .header {
             text-align: center;
-            padding: 6rem 1rem;
-            margin-bottom: 3rem;
+            padding: 4rem 2rem;
+            background: white;
         }
 
-        .container {
+        .card {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+            margin: 2rem auto;
+            padding: 3rem;
+            background-size: cover;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        .main-cta {
+        .card-overlay {
+            background: rgba(255,255,255,0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .cta-button {
             display: inline-block;
             background: var(--primary);
-            color: white!important;
-            padding: 1.5rem 3rem;
-            border-radius: 50px;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
             text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 2rem 0;
+            margin-top: 1rem;
             transition: transform 0.3s;
-            box-shadow: 0 10px 20px rgba(255,107,107,0.3);
-        }
-
-        .main-cta:hover {
-            transform: scale(1.05);
-        }
-
-        .accessories-section {
-            background: white;
-            padding: 4rem 2rem;
-            border-radius: 20px;
-            margin: 4rem 0;
-            box-shadow: 0 5px 30px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .secondary-cta {
-            display: inline-block;
-            background: var(--secondary);
-            color: #333!important;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            margin: 1rem 0;
-            border: 2px solid #e0e0e0;
-        }
-
-        .content-hub {
-            text-align: center;
-            padding: 4rem 1rem;
-            background: linear-gradient(45deg, #FFEEE4, #FFF9F2);
-            margin: 4rem 0;
-            border-radius: 20px;
-        }
-
-        .content-cta {
-            display: inline-block;
-            background: var(--accent);
-            color: #333!important;
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 2rem;
         }
 
         footer {
-            background: #333;
-            color: white;
             text-align: center;
-            padding: 3rem 1rem;
-        }
-
-        .machine-img {
-            max-width: 600px;
-            width: 100%;
-            border-radius: 20px;
-            margin: 2rem auto;
-            display: block;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-        }
-
-        .disclosure {
-            font-size: 0.8rem;
-            opacity: 0.8;
-            margin-top: 2rem;
+            padding: 2rem;
+            margin-top: 3rem;
         }
     </style>
 </head>
 <body>
+    <!-- Title Section -->
+    <header class="header">
+        <h1>Artisan Ice Cream Tools</h1>
+        <p>Professional Results in Your Home Kitchen</p>
+    </header>
 
-        <section class="accessories-section">
-            <h2>Essential Ice Cream Accessories</h2>
-            <p>Complete your setup with professional tools:</p>
-            <div style="margin: 2rem 0;">
-                <a href="https://amzn.to/41ApwBS" 
-                   class="secondary-cta" 
-                   target="_blank">
-                    Scoops • Molds • Storage • Flavors →
-                </a>
-            </div>
-           
-        </section>
-
-        <section class="content-hub">
-            <h2>Master Ice Cream Making</h2>
-            <p>Read Our Insightful Articles:</p>
-            <ul style="list-style: none; margin: 2rem 0; line-height: 2;">
-                <li>✓ Machine Reviews </li>
-                <li>✓ Beginner Guides </li>
-                <li>✓ Diet Specific Recipes </li>
-                <li>✓ Seasonal specials</li>
-            </ul>
-            <a href="https://hownow101.com/category/ice-cream" 
-               class="content-cta"
-               target="_blank">
-                Explore Our Free Guides →
+    <!-- Machine Section -->
+    <div class="card" style="background-image: url('images/machines.jpg')"> <!-- GitHub image path -->
+        <div class="card-overlay">
+            <h2>Premium Ice Cream Makers</h2>
+            <p>Commercial-grade machines for perfect texture</p>
+            <a href="https://amzn.to/3XmENng" class="cta-button" target="_blank">
+                Shop Machines →
             </a>
-        </section>
+        </div>
     </div>
+
+    <!-- Accessories Section -->
+    <div class="card" style="background-image: url('images/accessories.jpg')"> <!-- GitHub image path -->
+        <div class="card-overlay">
+            <h2>Essential Accessories</h2>
+            <p>Scoops, molds & specialty ingredients</p>
+            <a href="https://amzn.to/41ApwBS" class="cta-button" target="_blank">
+                Shop Accessories →
+            </a>
+        </div>
+    </div>
+
+    <!-- Articles Section -->
+    <div class="card" style="background-image: url('images/articles.jpg')"> <!-- GitHub image path -->
+        <div class="card-overlay">
+            <h2>Expert Guides & Recipes</h2>
+            <p>Learn professional techniques</p>
+            <a href="https://hownow101.com/category/ice-cream" class="cta-button" target="_blank">
+                Read Articles →
+            </a>
+        </div>
+    </div>
+
+  
 
     <footer>
         <p>© 2025 HowNow101 Ice Cream Tools</p>
