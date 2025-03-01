@@ -28,7 +28,8 @@
             text-align: center;
             padding: 8rem 2rem 6rem;
             background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
-                        url('https://images.unsplash.com/photo-1577234286642-fc512ea5d8c2') center/cover;
+                        url('images/hero-placeholder.jpg') center/cover; /* Add your hero image */
+            margin-bottom: 2rem;
         }
 
         .hero h1 {
@@ -49,15 +50,14 @@
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 2rem;
+            justify-content: center;
         }
 
-
-        
         .main-card {
-            grid-column: 1 / -1;
+            width: 100%;
             background: linear-gradient(45deg, var(--primary), var(--accent));
             border-radius: 20px;
             padding: 3rem;
@@ -65,6 +65,8 @@
             box-shadow: 0 10px 30px rgba(255,107,107,0.2);
             position: relative;
             overflow: hidden;
+            background-image: url('images/machines.jpg'); /* Your machine image */
+            background-size: cover;
         }
 
         .main-card::after {
@@ -91,14 +93,35 @@
             text-align: center;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s;
-            min-height: 250px; /* Added for consistent height */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Aligns button to bottom */
+            width: 100%;
+            max-width: 500px;
+            background-size: cover;
+            position: relative;
         }
 
-        .secondary-card:hover {
-            transform: translateY(-5px);
+        #accessories-card {
+            background-image: url('images/accessories.jpg'); /* Your accessories image */
+        }
+
+        #recipes-card {
+            background-image: url('images/recipes.jpg'); /* Your recipes image */
+        }
+
+        .secondary-card::after {
+            content: "";
+            background: rgba(255,255,255,0.9);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            border-radius: 20px;
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 2;
         }
 
         .cta-button {
@@ -135,8 +158,9 @@
         <p>Transform your kitchen into a gourmet ice cream parlor with pro-grade tools and expert recipes</p>
     </section>
 
-    <!-- Main Machine Card -->
+    <!-- Main Content -->
     <div class="card-container">
+        <!-- Main Machine Card -->
         <div class="main-card">
             <div class="main-card-content">
                 <h2>Professional Ice Cream Makers</h2>
@@ -148,24 +172,29 @@
         </div>
 
         <!-- Accessories Card -->
-        <div class="secondary-card">
-            <h3>Essential Accessories Kit</h3>
-            <p>Scoops, molds & specialty ingredients</p>
-            <a href="https://amzn.to/41ApwBS" class="cta-button" target="_blank">
-                🧁 Get Accessories →
-            </a>
+        <div class="secondary-card" id="accessories-card">
+            <div class="card-content">
+                <h3>Essential Accessories Kit</h3>
+                <p>Scoops, molds & specialty ingredients</p>
+                <a href="https://amzn.to/41ApwBS" class="cta-button" target="_blank">
+                    🧁 Get Accessories →
+                </a>
+            </div>
         </div>
 
-        <!-- Articles Card -->
-        <div class="secondary-card">
-            <h3>Expert Recipes & Guides</h3>
-            <p>Master professional techniques</p>
-            <a href="https://hownow101.com/category/ice-cream" class="cta-button" target="_blank">
-                📚 Read Articles →
-            </a>
+        <!-- Recipes Card -->
+        <div class="secondary-card" id="recipes-card">
+            <div class="card-content">
+                <h3>Expert Recipes & Guides</h3>
+                <p>Master professional techniques</p>
+                <a href="https://hownow101.com/category/ice-cream" class="cta-button" target="_blank">
+                    📚 Read Articles →
+                </a>
+            </div>
         </div>
     </div>
 
+  
   
 
     <footer>
